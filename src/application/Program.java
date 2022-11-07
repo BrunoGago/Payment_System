@@ -23,11 +23,13 @@ public class Program {
 		int number = sc.nextInt();
 		System.out.print("Data (dd/MM/yyyy HH:mm): ");
 		LocalDate date = LocalDate.parse(sc.next(), fmt);
-		System.out.print("Entre com o número de parcelas: ");
+		System.out.print("Valor do contrato: ");
 		double totalValue = sc.nextDouble();
 		
-		Contract contract = new Contract(number, date, totalValue);
-
+		Contract obj = new Contract(number, date, totalValue);
+		
+		System.out.print("Entre com o número de parcelas: ");
+		int n = sc.nextInt();
 		
 		sc.close();
 	}
